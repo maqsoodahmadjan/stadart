@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hello_jni"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bladerunner.HelloJni">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:text="Open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="125dp"
+        tools:layout_editor_absoluteX="143dp"
+        android:id="@+id/open_b"
+        android:onClick="onClick" />
+
+    <Button
+        android:text="Hook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="190dp"
+        tools:layout_editor_absoluteX="145dp"
+        android:id="@+id/hook_B" />
+
+</android.support.constraint.ConstraintLayout>
